@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 interface RevealProps {
-  children: React.ReactNode;
+  children: React.Node;
   className?: string;
   delay?: number;
   direction?: 'up' | 'down' | 'left' | 'right' | 'scale';
