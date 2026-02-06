@@ -96,8 +96,10 @@ const Ebook: React.FC = () => {
                                     {/* Abstract Graphic */}
                                     <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 border border-white/10 rounded-full animate-pulse-slow"></div>
                                     <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 border border-brand-accent/20 rounded-full"></div>
-                                    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 border border-white/5 rounded-full animate-[spin_10s_linear_infinite]">
-                                       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2 h-2 bg-brand-accent rounded-full shadow-[0_0_10px_rgba(204,255,0,1)]"></div>
+                                    
+                                    {/* ORBIT FIX: Added will-change-transform and -translate-y-1/2 to the dot for perfect centering on the line */}
+                                    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 border border-white/5 rounded-full animate-[spin_10s_linear_infinite] will-change-transform">
+                                       <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-brand-accent rounded-full shadow-[0_0_10px_rgba(204,255,0,1)]"></div>
                                     </div>
 
                                     <h3 className="text-5xl font-display font-bold text-white leading-none tracking-tighter mb-2 mix-blend-overlay relative z-10">
